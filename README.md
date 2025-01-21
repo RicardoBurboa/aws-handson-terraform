@@ -5,8 +5,8 @@ Este repositorio contiene un módulo hecho con Terraform que permite crear una p
 
 ## Pasos a Seguir:
 1. Descargar el proyecto.
-2. Configurar las credenciales de AWS en tu sistema.
-3. Instalar Terraform [(Cómo Instalar Terraform)](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+2. Configurar las credenciales de AWS en tu sistema. [(Cómo Configurar las Credenciales de AWS)](https://docs.aws.amazon.com/cli/v1/userguide/cli-chap-configure.html)
+3. Instalar Terraform. [(Cómo Instalar Terraform)](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 4. Ejecutar los siguientes comandos de Terraform sobre la carpeta del proyecto:
    * terraform init
    * terraform plan -var="bucket_new_name=BucketEjemploNombreUnico" -var="region=us-east-1"
