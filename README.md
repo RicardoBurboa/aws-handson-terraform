@@ -13,10 +13,16 @@ Este repositorio contiene un módulo hecho con Terraform que permite crear una p
    * terraform apply -var="bucket_new_name=BucketEjemploNombreUnico" -var="region=us-east-1" -auto-approve
 
 
-En caso de querer mostrar el output del endpoint del sitio web en la consola, es necesario correr los siguientes comandos después del primer apply.
-- terraform get
-- terraform apply -var="bucket_new_name=123testplswork123" -var="region=us-east-1" -auto-approve
+* En caso de querer mostrar el output del endpoint del sitio web en la consola, es necesario correr los siguientes comandos después del primer apply.
+  - terraform get
+  - terraform apply -var="bucket_new_name=123testplswork123" -var="region=us-east-1" -auto-approve
 
 
-En caso de querer deshacer los cambios en la nube, ejecutar:
-- terraform destroy
+* En caso de querer deshacer los cambios en la nube, ejecutar:
+  - terraform destroy
+
+## Características del Módulo
+
+- Validación para que la región siempre sea us-east-1
+- El usuario puede establecer las variables de la región y del nombre del Bucket.
+- Fácil de usar ya que todo está en un módulo.
