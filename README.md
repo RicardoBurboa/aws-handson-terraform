@@ -8,9 +8,9 @@ Este repositorio contiene un módulo hecho con Terraform que permite crear una p
 2. Configurar las credenciales de AWS en tu sistema.
 3. Instalar Terraform [(Cómo Instalar Terraform)](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 4. Ejecutar los siguientes comandos de Terraform sobre la carpeta del proyecto:
-  4.1. terraform init
-  4.2. terraform plan -var="bucket_new_name=BucketEjemploNombreUnico" -var="region=us-east-1"
-  4.3. terraform apply -var="bucket_new_name=BucketEjemploNombreUnico" -var="region=us-east-1" -auto-approve
+   * terraform init
+   * terraform plan -var="bucket_new_name=BucketEjemploNombreUnico" -var="region=us-east-1"
+   * terraform apply -var="bucket_new_name=BucketEjemploNombreUnico" -var="region=us-east-1" -auto-approve
 
 En caso de querer mostrar el output del endpoint del sitio web en la consola, es necesario correr los siguientes comandos después del primer apply.
 - terraform get
